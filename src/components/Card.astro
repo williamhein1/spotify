@@ -1,0 +1,64 @@
+---
+const { billede, navn, rolle, rating, shape = "circle" } = Astro.props;
+---
+
+<article class="cards">
+  <img src={billede} alt="portrætbillede" class={shape === "circle" ? "circle" : "square"} />
+  <h4>{navn}</h4>
+  <h5>{rolle}</h5>
+  {rating && <p class="rating">Nr1</p>}
+</article>
+
+<style>
+  .cards:hover {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+  }
+
+  .cards {
+    width: fit-content;
+    padding: 0.5rem;
+    height: 100%;
+    position: relative;
+  }
+
+  .cards:first-of-type {
+    margin-left: 1rem;
+  }
+
+  img.circle {
+    border-radius: 200px;
+    height: 150px;
+    width: 150px;
+  }
+
+  img.square {
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: #1cd760;
+    color: white;
+    border-radius: 100%;
+  }
+
+  h4 {
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  h5 {
+    color: #aaa;
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+</style>

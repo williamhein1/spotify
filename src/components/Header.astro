@@ -1,0 +1,131 @@
+<header class="navbar">
+  <div class="navbar-left">
+    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" alt="Spotify Logo" class="logo" />
+    <button class="home-btn">
+      <img src="https://img.icons8.com/m_rounded/200/FFFFFF/home.png" alt="Home" />
+    </button>
+    <div class="search-bar">
+      <img src="https://www.shareicon.net/data/2017/02/09/878632_find_512x512.png" alt="Search" class="search-icon" />
+      <input type="text" placeholder="What do you want to play?" />
+    </div>
+  </div>
+
+  <div class="navbar-right">
+    <nav>
+      <a href="#">Premium</a>
+      <a href="#">Support</a>
+      <a href="#">Download</a>
+      <div class="divider"></div>
+      <a href="#"><img src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-file-download-icon-image_1344394.jpg" alt="Download" /> Install App</a>
+      <a href="#">Sign up</a>
+      <button class="login-btn">Log in</button>
+    </nav>
+  </div>
+</header>
+
+<style>
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 10px 20px;
+    color: white;
+  }
+
+  /* Left Section */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Spotify Logo */
+  .logo {
+    height: 30px;
+  }
+
+  /* Home Button */
+  .home-btn {
+    background: #222;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .home-btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: #222;
+    padding: 15px 30px;
+    border-radius: 25px;
+    width: 300px;
+  }
+
+  .search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100%;
+  }
+
+  .search-bar img {
+    width: 18px;
+    margin-right: 10px;
+  }
+
+  /* Right Section */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+  }
+
+  .navbar-right img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .navbar-right nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navbar-right a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .navbar-right a:hover {
+    color: white;
+  }
+
+  .divider {
+    width: 1px;
+    height: 20px;
+    background: gray;
+  }
+
+  /* Login Button */
+  .login-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
